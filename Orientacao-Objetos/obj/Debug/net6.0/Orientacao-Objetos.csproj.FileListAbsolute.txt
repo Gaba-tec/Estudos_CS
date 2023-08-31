@@ -1,0 +1,15 @@
+C:\Users\usr\Documents\Estudos_CS\Estudos_CS\Orientacao-Objetos\bin\Debug\net6.0\Orientacao-Objetos.exe
+C:\Users\usr\Documents\Estudos_CS\Estudos_CS\Orientacao-Objetos\bin\Debug\net6.0\Orientacao-Objetos.deps.json
+C:\Users\usr\Documents\Estudos_CS\Estudos_CS\Orientacao-Objetos\bin\Debug\net6.0\Orientacao-Objetos.runtimeconfig.json
+C:\Users\usr\Documents\Estudos_CS\Estudos_CS\Orientacao-Objetos\bin\Debug\net6.0\Orientacao-Objetos.dll
+C:\Users\usr\Documents\Estudos_CS\Estudos_CS\Orientacao-Objetos\bin\Debug\net6.0\Orientacao-Objetos.pdb
+C:\Users\usr\Documents\Estudos_CS\Estudos_CS\Orientacao-Objetos\obj\Debug\net6.0\Orientacao-Objetos.csproj.AssemblyReference.cache
+C:\Users\usr\Documents\Estudos_CS\Estudos_CS\Orientacao-Objetos\obj\Debug\net6.0\Orientacao-Objetos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\usr\Documents\Estudos_CS\Estudos_CS\Orientacao-Objetos\obj\Debug\net6.0\Orientacao-Objetos.AssemblyInfoInputs.cache
+C:\Users\usr\Documents\Estudos_CS\Estudos_CS\Orientacao-Objetos\obj\Debug\net6.0\Orientacao-Objetos.AssemblyInfo.cs
+C:\Users\usr\Documents\Estudos_CS\Estudos_CS\Orientacao-Objetos\obj\Debug\net6.0\Orientacao-Objetos.csproj.CoreCompileInputs.cache
+C:\Users\usr\Documents\Estudos_CS\Estudos_CS\Orientacao-Objetos\obj\Debug\net6.0\Orientacao-Objetos.dll
+C:\Users\usr\Documents\Estudos_CS\Estudos_CS\Orientacao-Objetos\obj\Debug\net6.0\refint\Orientacao-Objetos.dll
+C:\Users\usr\Documents\Estudos_CS\Estudos_CS\Orientacao-Objetos\obj\Debug\net6.0\Orientacao-Objetos.pdb
+C:\Users\usr\Documents\Estudos_CS\Estudos_CS\Orientacao-Objetos\obj\Debug\net6.0\Orientacao-Objetos.genruntimeconfig.cache
+C:\Users\usr\Documents\Estudos_CS\Estudos_CS\Orientacao-Objetos\obj\Debug\net6.0\ref\Orientacao-Objetos.dll
