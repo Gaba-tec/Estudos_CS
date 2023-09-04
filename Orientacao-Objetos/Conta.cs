@@ -1,9 +1,9 @@
 class Conta
 {
     public int numero;
-    public string titular = "";
+    //public string titular;
     public double saldo = 100;
-
+    public Cliente titular;
 
     public bool Saca(double valor)
     {
@@ -23,5 +23,14 @@ class Conta
     public void Deposita(double valor)
     {
         this.saldo += valor;
+    }
+
+
+    public void Transfere(double valor, Conta destino)
+    {
+        if(this.Saca(valor))
+        {   
+           this.Deposita(valor);
+        }
     }
 }
