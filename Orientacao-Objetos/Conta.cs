@@ -1,28 +1,32 @@
 class Conta
 {
-    public int numero;
-    //public string titular;
-    public double saldo = 100;
-    public Cliente titular;
+    //private int numero;
+    
+    public int Numero {get;set;}
+    
+    //private double saldo = 100;
+
+    public double Saldo{get; private set;}
+    private Cliente titular;
 
     public bool Saca(double valor)
     {
-        if(this.saldo >= valor)
+        if(this.Saldo >= valor)
         {
-            this.saldo -= valor;
-            Console.WriteLine($"Saque realizado com sucesso, valor na conta: {this.saldo}");
+            this.Saldo -= valor;
+            Console.WriteLine($"Saque realizado com sucesso, valor na conta: {this.Saldo}");
             return true;
         }
         else
         {
-            Console.WriteLine($"Saque Insuficiente, valor na conta: {this.saldo}");
+            Console.WriteLine($"Saque Insuficiente, valor na conta: {this.Saldo}");
             return false;
         }
     }
 
     public void Deposita(double valor)
     {
-        this.saldo += valor;
+        this.Saldo += valor;
     }
 
 
@@ -33,4 +37,16 @@ class Conta
            this.Deposita(valor);
         }
     }
+
+    public double PegaSaldo()
+    {
+        return this.Saldo;
+    }
+
+    /*
+    public void ColocaNumero(int numero)
+    {
+        this.numero = numero;
+    }
+    */
 }

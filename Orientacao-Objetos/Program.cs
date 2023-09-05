@@ -19,6 +19,7 @@ victor.saldo = 1000;
 victor.Transfere(100,guilherme);
 */
 
+/*
 Cliente victor = new Cliente();
 victor.nome = "victor";
 
@@ -30,3 +31,33 @@ umaConta.titular.rg = "12345678-9";
 
 Console.WriteLine(umaConta.titular.nome);
 Console.WriteLine(victor.rg);
+*/
+
+// TRABALHANDO COM ATRIBUTOS/MÉTODOS PRIVADOS
+
+/*
+Conta c = new Conta();
+c.Deposita(100);
+c.ColocaNumero(212);
+Console.WriteLine($"Saldo da conta: {c.PegaSaldo()}");
+*/
+
+// TRABALHANDO COM PROPERTIES GET E SET
+
+/*
+Conta c = new Conta();
+c.ColocaNumero(212);
+Console.WriteLine($"O número da conta é: {c.Numero}");
+*/
+
+// SIMPLIFICANDO A DECLARAÇÃO DE PROPRIEDADES GET E SET
+
+Conta c = new Conta();
+
+c.Numero = 212;
+Console.WriteLine(c.Numero); // Funciona porque minha propriedade foi definida com o Get e o Set publico
+
+//c.Saldo = 0; // Não funciona porque meu set é privado;
+
+c.Deposita(200);
+Console.WriteLine(c.Saldo);
