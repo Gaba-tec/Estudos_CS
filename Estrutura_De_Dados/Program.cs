@@ -1,4 +1,5 @@
-﻿// Como funcionar a Estrutura de Dados - Pilha
+﻿/*
+// Como funcionar a Estrutura de Dados - Pilha
 
 // Instancia da Classe Stack do tipo Genérica
 Stack<string> minhaPilha = new Stack<string>();
@@ -54,3 +55,41 @@ Console.WriteLine("---VERIFICANDO QUANTOS ELEMENTOS EXISTEM DENTRO DA PILHA---")
 // Para conferir quantos elementos existem dentro da pilha usamos Count();
 
 Console.WriteLine(minhaPilha.Count());
+*/
+
+// --- COMO FUNCIONA A ESTRUTURA DE DADOS FILA EM C# ---
+
+// Fila Padrão de coleção Genérica
+Queue<string> diasSemana = new Queue<string>();
+diasSemana.Enqueue("Segunda-Feira");
+diasSemana.Enqueue("Terça-Feira");
+diasSemana.Enqueue("Quarta-Feira");
+diasSemana.Enqueue("Quinta-Feira");
+diasSemana.Enqueue("Sexta-Feira");
+
+//Outros Construtores da classe Queue
+
+int[] array1 = new int[] {2,4,6,8};
+Queue<int> pares = new Queue<int>(array1);
+
+var lista = new List<string>(){"uva", "pera"};
+var frutas = new Queue<string>(lista);
+
+var impares = new Queue<int>(3);
+impares.Enqueue(1);
+impares.Enqueue(3);
+impares.Enqueue(5);
+
+// Propriedades e Métodos
+
+// Propriedade
+
+impares.Count(); // Retorna o total de itens na fila
+
+// Métodos
+
+diasSemana.Enqueue("Sábado"); // Inclui um item no final da fila
+diasSemana.Dequeue(); // retorna um item no começo da fila e o remove
+diasSemana.Peek(); // retorna o item do inicio da fila sem remover
+diasSemana.Contains("Segunda-Feira"); // verifica se o item existe na fila e retorna true ou false
+diasSemana.Clear(); // Remove todos os elementos da fila;
