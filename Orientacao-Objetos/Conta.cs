@@ -1,10 +1,7 @@
 class Conta
 {
-    //private int numero;
-    
+
     public int Numero {get;set;}
-    
-    //private double saldo = 100;
 
     public double Saldo{get; private set;}
     private Cliente titular;

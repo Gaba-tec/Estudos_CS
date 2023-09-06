@@ -52,6 +52,8 @@ Console.WriteLine($"O número da conta é: {c.Numero}");
 
 // SIMPLIFICANDO A DECLARAÇÃO DE PROPRIEDADES GET E SET
 
+
+/*
 Conta c = new Conta();
 
 c.Numero = 212;
@@ -61,3 +63,17 @@ Console.WriteLine(c.Numero); // Funciona porque minha propriedade foi definida c
 
 c.Deposita(200);
 Console.WriteLine(c.Saldo);
+*/
+
+//**CONSTRUTORES**
+
+Cliente gabriel = new Cliente("Gabriel")
+{
+    Cpf = "488.385.408-61",
+    Rg = "38.354.068-9",
+    Idade = 24
+};
+
+
+
+
