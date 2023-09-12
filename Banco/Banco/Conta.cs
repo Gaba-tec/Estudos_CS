@@ -1,4 +1,6 @@
-﻿namespace Banco
+﻿using System;
+
+namespace Banco
 {
 	public class Conta
 	{
@@ -11,6 +13,23 @@
 		public Conta()
 		{
 
+		}
+
+		public void Deposita(double valor)
+		{
+			this.Saldo += valor;
+		}
+
+		public void Saque(double valor)
+		{
+			if(this.Saldo >= valor)
+			{
+				this.Saldo -= valor;
+			}
+			else
+			{
+				System.Windows.Forms.MessageBox.Show("Saldo Insuficiente!");
+			}
 		}
 	}
 }
