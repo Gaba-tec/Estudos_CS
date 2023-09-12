@@ -57,6 +57,8 @@ Console.WriteLine("---VERIFICANDO QUANTOS ELEMENTOS EXISTEM DENTRO DA PILHA---")
 Console.WriteLine(minhaPilha.Count());
 */
 
+
+/*
 // --- COMO FUNCIONA A ESTRUTURA DE DADOS FILA EM C# ---
 
 // Fila Padrão de coleção Genérica
@@ -93,3 +95,8 @@ diasSemana.Dequeue(); // retorna um item no começo da fila e o remove
 diasSemana.Peek(); // retorna o item do inicio da fila sem remover
 diasSemana.Contains("Segunda-Feira"); // verifica se o item existe na fila e retorna true ou false
 diasSemana.Clear(); // Remove todos os elementos da fila;
+
+*/
+
+
+
