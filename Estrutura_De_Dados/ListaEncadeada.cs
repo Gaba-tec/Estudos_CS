@@ -1,8 +1,9 @@
-class ListaEncadeada
+public class ListaEncadeada
 {
     // LISTA DUPLAMENTE ENCADEADA 
 
-    LinkedList<string> transp = new LinkedList<string>();
-
+    LinkedList<String> transp = new LinkedList<String>();
+    
+    
     
 }
