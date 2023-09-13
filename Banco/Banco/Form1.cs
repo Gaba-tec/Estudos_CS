@@ -22,11 +22,13 @@ namespace Banco
 
 		private void Form1_Load(object sender, EventArgs e)
 		{
-			this.conta = new Conta();
+			this.conta = new ContaCorrente();
 
 			Cliente cliente = new Cliente("Gabriel");
 
+
 			conta.Titular = cliente;
+
 
 			textoTitular.Text = conta.Titular.Nome;
 			textoNumero.Text = Convert.ToString(conta.Numero);

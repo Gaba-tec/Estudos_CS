@@ -7,7 +7,7 @@ namespace Banco
 
 		public int Numero { get; set; }
 
-		public double Saldo { get; private set; }
+		public double Saldo { get; protected set; }
 		public Cliente Titular { get; internal set; }
 
 		public Conta()
@@ -15,12 +15,12 @@ namespace Banco
 
 		}
 
-		public void Deposita(double valor)
+		public virtual void Deposita(double valor)
 		{
 			this.Saldo += valor;
 		}
 
-		public void Saque(double valor)
+		public virtual void Saque(double valor)
 		{
 			if(this.Saldo >= valor)
 			{
