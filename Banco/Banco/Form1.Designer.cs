@@ -38,49 +38,53 @@
 			this.label2 = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
 			this.label4 = new System.Windows.Forms.Label();
+			this.label6 = new System.Windows.Forms.Label();
+			this.label5 = new System.Windows.Forms.Label();
+			this.textoIndice = new System.Windows.Forms.TextBox();
+			this.botaoBusca = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// textoTitular
 			// 
-			this.textoTitular.Location = new System.Drawing.Point(166, 14);
+			this.textoTitular.Location = new System.Drawing.Point(140, 124);
 			this.textoTitular.Name = "textoTitular";
-			this.textoTitular.Size = new System.Drawing.Size(100, 20);
+			this.textoTitular.Size = new System.Drawing.Size(206, 20);
 			this.textoTitular.TabIndex = 0;
 			// 
 			// textoNumero
 			// 
-			this.textoNumero.Location = new System.Drawing.Point(166, 59);
+			this.textoNumero.Location = new System.Drawing.Point(140, 171);
 			this.textoNumero.Name = "textoNumero";
-			this.textoNumero.Size = new System.Drawing.Size(100, 20);
+			this.textoNumero.Size = new System.Drawing.Size(206, 20);
 			this.textoNumero.TabIndex = 1;
 			// 
 			// textoSaldo
 			// 
-			this.textoSaldo.Location = new System.Drawing.Point(166, 103);
+			this.textoSaldo.Location = new System.Drawing.Point(140, 218);
 			this.textoSaldo.Name = "textoSaldo";
-			this.textoSaldo.Size = new System.Drawing.Size(100, 20);
+			this.textoSaldo.Size = new System.Drawing.Size(206, 20);
 			this.textoSaldo.TabIndex = 2;
 			// 
 			// textoValor
 			// 
-			this.textoValor.Location = new System.Drawing.Point(166, 145);
+			this.textoValor.Location = new System.Drawing.Point(140, 266);
 			this.textoValor.Name = "textoValor";
-			this.textoValor.Size = new System.Drawing.Size(100, 20);
+			this.textoValor.Size = new System.Drawing.Size(206, 20);
 			this.textoValor.TabIndex = 3;
 			// 
 			// botaoDeposito
 			// 
-			this.botaoDeposito.Location = new System.Drawing.Point(15, 199);
+			this.botaoDeposito.Location = new System.Drawing.Point(140, 328);
 			this.botaoDeposito.Name = "botaoDeposito";
 			this.botaoDeposito.Size = new System.Drawing.Size(86, 32);
 			this.botaoDeposito.TabIndex = 4;
 			this.botaoDeposito.Text = "Depositar";
 			this.botaoDeposito.UseVisualStyleBackColor = true;
-			this.botaoDeposito.Click += new System.EventHandler(this.deposito);
+			this.botaoDeposito.Click += new System.EventHandler(this.Deposito);
 			// 
 			// botaoSaque
 			// 
-			this.botaoSaque.Location = new System.Drawing.Point(166, 199);
+			this.botaoSaque.Location = new System.Drawing.Point(258, 328);
 			this.botaoSaque.Name = "botaoSaque";
 			this.botaoSaque.Size = new System.Drawing.Size(88, 32);
 			this.botaoSaque.TabIndex = 5;
@@ -91,7 +95,7 @@
 			// label1
 			// 
 			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(10, 21);
+			this.label1.Location = new System.Drawing.Point(10, 131);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(36, 13);
 			this.label1.TabIndex = 6;
@@ -100,7 +104,7 @@
 			// label2
 			// 
 			this.label2.AutoSize = true;
-			this.label2.Location = new System.Drawing.Point(10, 66);
+			this.label2.Location = new System.Drawing.Point(7, 178);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(44, 13);
 			this.label2.TabIndex = 7;
@@ -109,7 +113,7 @@
 			// label3
 			// 
 			this.label3.AutoSize = true;
-			this.label3.Location = new System.Drawing.Point(12, 110);
+			this.label3.Location = new System.Drawing.Point(7, 225);
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(34, 13);
 			this.label3.TabIndex = 8;
@@ -118,17 +122,56 @@
 			// label4
 			// 
 			this.label4.AutoSize = true;
-			this.label4.Location = new System.Drawing.Point(15, 151);
+			this.label4.Location = new System.Drawing.Point(10, 273);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(31, 13);
 			this.label4.TabIndex = 9;
 			this.label4.Text = "Valor";
 			// 
+			// label6
+			// 
+			this.label6.AutoSize = true;
+			this.label6.Location = new System.Drawing.Point(10, 3);
+			this.label6.Name = "label6";
+			this.label6.Size = new System.Drawing.Size(83, 13);
+			this.label6.TabIndex = 11;
+			this.label6.Text = "Busca de Conta";
+			// 
+			// label5
+			// 
+			this.label5.AutoSize = true;
+			this.label5.Location = new System.Drawing.Point(29, 47);
+			this.label5.Name = "label5";
+			this.label5.Size = new System.Drawing.Size(85, 13);
+			this.label5.TabIndex = 12;
+			this.label5.Text = "Escolha a Conta";
+			// 
+			// textoIndice
+			// 
+			this.textoIndice.Location = new System.Drawing.Point(120, 44);
+			this.textoIndice.Name = "textoIndice";
+			this.textoIndice.Size = new System.Drawing.Size(125, 20);
+			this.textoIndice.TabIndex = 13;
+			// 
+			// botaoBusca
+			// 
+			this.botaoBusca.Location = new System.Drawing.Point(258, 42);
+			this.botaoBusca.Name = "botaoBusca";
+			this.botaoBusca.Size = new System.Drawing.Size(75, 23);
+			this.botaoBusca.TabIndex = 14;
+			this.botaoBusca.Text = "Buscar";
+			this.botaoBusca.UseVisualStyleBackColor = true;
+			this.botaoBusca.Click += new System.EventHandler(this.botaoBusca_Click);
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(278, 239);
+			this.ClientSize = new System.Drawing.Size(358, 372);
+			this.Controls.Add(this.botaoBusca);
+			this.Controls.Add(this.textoIndice);
+			this.Controls.Add(this.label5);
+			this.Controls.Add(this.label6);
 			this.Controls.Add(this.label4);
 			this.Controls.Add(this.label3);
 			this.Controls.Add(this.label2);
@@ -159,6 +202,10 @@
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.Label label4;
+		private System.Windows.Forms.Label label6;
+		private System.Windows.Forms.Label label5;
+		private System.Windows.Forms.TextBox textoIndice;
+		private System.Windows.Forms.Button botaoBusca;
 	}
 }
 

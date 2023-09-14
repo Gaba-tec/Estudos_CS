@@ -1,6 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 Console.WriteLine("Hello, World!");
-
+/*
 ListaEncadeada l = new ListaEncadeada();
 
 LinkedList<string> transp = new LinkedList<string>();
@@ -46,4 +46,12 @@ l.RetornaLista(transp);
 
 //transp.RemoveFirst(); Remove o primeiro elemento
 //transp.RemoveLast(); Remove o segundo elemento
+*/
 
+ArrayStruct arrS = new ArrayStruct();
+
+int[] arr = {1,4,3,2};
+
+List<int> list = new List<int>(arr);
+
+arrS.ReverseArr(list);
