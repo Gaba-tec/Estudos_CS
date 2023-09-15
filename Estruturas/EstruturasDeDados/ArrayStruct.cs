@@ -3,15 +3,19 @@ public class ArrayStruct
 {
 	public List<int> newArr = new List<int>();
 
-	public void ReverseArr(List<int> arr)
+	public ArrayStruct() {}
+
+	public void ReverseArr(List<int> a)
 	{
-		
-		for(int i = arr.Count; i > 0; i--)
+		for(int i = a.Count - 1; i >= 0; i--)
 		{
-			newArr[arr.Count - i] = arr[i - 1];
+			newArr.Add(a[i]);
 		}
 
-		Console.WriteLine(newArr);
+		foreach(int i in newArr)
+		{
+			Console.WriteLine(i);
+		}
 	}
 
 }

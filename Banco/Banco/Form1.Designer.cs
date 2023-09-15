@@ -40,8 +40,7 @@
 			this.label4 = new System.Windows.Forms.Label();
 			this.label6 = new System.Windows.Forms.Label();
 			this.label5 = new System.Windows.Forms.Label();
-			this.textoIndice = new System.Windows.Forms.TextBox();
-			this.botaoBusca = new System.Windows.Forms.Button();
+			this.comboContas = new System.Windows.Forms.ComboBox();
 			this.SuspendLayout();
 			// 
 			// textoTitular
@@ -146,30 +145,21 @@
 			this.label5.TabIndex = 12;
 			this.label5.Text = "Escolha a Conta";
 			// 
-			// textoIndice
+			// comboContas
 			// 
-			this.textoIndice.Location = new System.Drawing.Point(120, 44);
-			this.textoIndice.Name = "textoIndice";
-			this.textoIndice.Size = new System.Drawing.Size(125, 20);
-			this.textoIndice.TabIndex = 13;
-			// 
-			// botaoBusca
-			// 
-			this.botaoBusca.Location = new System.Drawing.Point(258, 42);
-			this.botaoBusca.Name = "botaoBusca";
-			this.botaoBusca.Size = new System.Drawing.Size(75, 23);
-			this.botaoBusca.TabIndex = 14;
-			this.botaoBusca.Text = "Buscar";
-			this.botaoBusca.UseVisualStyleBackColor = true;
-			this.botaoBusca.Click += new System.EventHandler(this.botaoBusca_Click);
+			this.comboContas.FormattingEnabled = true;
+			this.comboContas.Location = new System.Drawing.Point(131, 44);
+			this.comboContas.Name = "comboContas";
+			this.comboContas.Size = new System.Drawing.Size(215, 21);
+			this.comboContas.TabIndex = 15;
+			this.comboContas.SelectedIndexChanged += new System.EventHandler(this.comboContas_SelectedIndexChanged);
 			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(358, 372);
-			this.Controls.Add(this.botaoBusca);
-			this.Controls.Add(this.textoIndice);
+			this.Controls.Add(this.comboContas);
 			this.Controls.Add(this.label5);
 			this.Controls.Add(this.label6);
 			this.Controls.Add(this.label4);
@@ -204,8 +194,7 @@
 		private System.Windows.Forms.Label label4;
 		private System.Windows.Forms.Label label6;
 		private System.Windows.Forms.Label label5;
-		private System.Windows.Forms.TextBox textoIndice;
-		private System.Windows.Forms.Button botaoBusca;
+		private System.Windows.Forms.ComboBox comboContas;
 	}
 }
 

@@ -36,45 +36,44 @@ namespace Banco
 			this.contas[2].Titular = new Cliente("osni");
 			this.contas[2].Numero = 3;
 
-			Cliente cliente = new Cliente("Gabriel");
 
-
-			contas[0].Titular = cliente;
-
-			TotalizadorDeContas totalContas = new TotalizadorDeContas();
-
-			totalContas.Adiciona(contas[0]);
-
-			textoTitular.Text = contas[0].Titular.Nome;
-			textoNumero.Text = Convert.ToString(contas[0].Numero);
-			textoSaldo.Text = Convert.ToString(contas[0].Saldo);
+			foreach (Conta conta in contas)
+			{
+				comboContas.Items.Add(conta.Titular.Nome);
+			}
 		}
 
 		private void Deposito(object sender, EventArgs e)
 		{
+			int indice = comboContas.SelectedIndex;
+
 			string valorDigitado = textoValor.Text;
 			double valorOperacao = Convert.ToDouble(valorDigitado);
-			contas[0].Deposita(valorOperacao);
-			textoSaldo.Text = Convert.ToString(this.contas[0].Saldo);
+			contas[indice].Deposita(valorOperacao);
+			textoSaldo.Text = Convert.ToString(this.contas[indice].Saldo);
 			MessageBox.Show("Sucesso");
 		}
 
 		private void botaoSaque_Click(object sender, EventArgs e)
 		{
+			int indice = comboContas.SelectedIndex;
+
 			string valorDigitado = textoValor.Text;
 			double valorOperacao = Convert.ToDouble(valorDigitado);
-			contas[0].Saque(valorOperacao);
-			textoSaldo.Text = Convert.ToString(this.contas[0].Saldo);
+			contas[indice].Saque(valorOperacao);
+			textoSaldo.Text = Convert.ToString(this.contas[indice].Saldo);
 			MessageBox.Show("Sucesso");
 		}
 
-		private void botaoBusca_Click(object sender, EventArgs e)
+
+		private void comboContas_SelectedIndexChanged(object sender, EventArgs e)
 		{
-			int indice = Convert.ToInt32(textoIndice.Text);
-			Conta seleciona = this.contas[indice];
-			textoNumero.Text = Convert.ToString(seleciona.Numero);
-			textoTitular.Text = seleciona.Titular.Nome;
-			textoSaldo.Text = Convert.ToString(seleciona.Saldo);
+			int indice = comboContas.SelectedIndex;
+
+			Conta selecionada = this.contas[indice];
+			textoTitular.Text = Convert.ToString(selecionada.Titular.Nome);
+			textoSaldo.Text = Convert.ToString(selecionada.Saldo);
+			textoNumero.Text = Convert.ToString(selecionada.Numero);
 		}
 	}
 }
