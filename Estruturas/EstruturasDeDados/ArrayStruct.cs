@@ -18,4 +18,24 @@ public class ArrayStruct
 		}
 	}
 
+	public void hourglassSum(int[,] arr2d)
+	{
+		int maiorValor = 0;
+		int soma = 0;
+
+		for(int i = 0; i < arr2d.GetLength(0) - 2; i++)
+		{
+			for(int j = 0; j < arr2d.GetLength(0)/2; j++)
+			{
+				soma = arr2d[i, j] + arr2d[i, j+1] + arr2d[i, j+2] + arr2d[i + 1, j+1] + arr2d[i + 2, j] + arr2d[i + 2, j+1] + arr2d[i + 2, j+2];
+
+				if(soma > maiorValor)
+				{
+					maiorValor = soma;
+				}
+			}
+			
+		}
+	}
+
 }
