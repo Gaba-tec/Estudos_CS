@@ -51,7 +51,7 @@ l.RetornaLista(transp);
 ArrayStruct arrS = new ArrayStruct();
 
 int[] arr = {1,4,3,2};
-int[,] arr2d = { { 1, 1, 1, 0, 0, 0 },{ 0, 1, 0, 0, 0, 0 },{ 1, 1, 1, 0, 0, 0 },{ 0, 0, 2, 4, 4, 0 },{ 0, 0, 0, 2, 0, 0 },{ 0, 0, 1, 2, 4, 0 } };
+int[,] arr2d = { { -1, 1, - 1, 0, 0, 0 },{ 0, - 1, 0, 0, 0, 0 },{ -1, - 1, - 1, 0, 0, 0 },{ 0, - 9, 2, - 4, - 4, 0 },{ -7, 0, 0, - 2, 0, 0 },{ 0, 0, - 1, - 2, - 4, 0 } };
 
  List<List<int>> myList = new List<List<int>>();
 
@@ -69,7 +69,7 @@ Console.WriteLine(myList[0][0]);
 
 Console.WriteLine(arr2d.GetLength(0) - 2);
 
-//arrS.hourglassSum(arr2d);
+arrS.hourglassSum(arr2d);
 
 List<int> list = new List<int>(arr);
 
