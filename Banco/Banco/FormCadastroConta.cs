@@ -12,9 +12,19 @@ namespace Banco
 {
 	public partial class FormCadastroConta : Form
 	{
-		public FormCadastroConta()
+		private Form1 formPrincipal;
+
+		public FormCadastroConta(Form1 formPrincipal)
 		{
 			InitializeComponent();
+			this.formPrincipal = formPrincipal;
+		}
+
+		private void botaoCadastro_Click(object sender, EventArgs e)
+		{
+			Conta novaConta = new Conta();
+			novaConta.Titular = new Cliente(textoTitular.Text);
+			novaConta.Numero = Convert.ToInt32(textoNumero.Text);
 		}
 	}
 }

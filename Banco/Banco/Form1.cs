@@ -14,6 +14,15 @@ namespace Banco
 	{
 
 		private Conta[] contas;
+		private int numeroDeContas;
+
+
+		public void AdicionaConta(Conta conta)
+		{
+			this.contas[this.numeroDeContas] = conta;
+			numeroDeContas++;
+			comboContas.Items.Add("Titular: " + conta.Titular.Nome);
+		}
 
 		public Form1()
 		{

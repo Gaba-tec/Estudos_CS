@@ -75,6 +75,7 @@
 			this.botaoCadastro.TabIndex = 4;
 			this.botaoCadastro.Text = "Cadastrar";
 			this.botaoCadastro.UseVisualStyleBackColor = true;
+			this.botaoCadastro.Click += new System.EventHandler(this.botaoCadastro_Click);
 			// 
 			// FormCadastroConta
 			// 
