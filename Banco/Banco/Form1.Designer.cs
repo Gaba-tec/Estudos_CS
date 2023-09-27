@@ -41,6 +41,7 @@
 			this.label6 = new System.Windows.Forms.Label();
 			this.label5 = new System.Windows.Forms.Label();
 			this.comboContas = new System.Windows.Forms.ComboBox();
+			this.botaoNovaConta = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// textoTitular
@@ -154,11 +155,22 @@
 			this.comboContas.TabIndex = 15;
 			this.comboContas.SelectedIndexChanged += new System.EventHandler(this.comboContas_SelectedIndexChanged);
 			// 
+			// botaoNovaConta
+			// 
+			this.botaoNovaConta.Location = new System.Drawing.Point(13, 328);
+			this.botaoNovaConta.Name = "botaoNovaConta";
+			this.botaoNovaConta.Size = new System.Drawing.Size(86, 32);
+			this.botaoNovaConta.TabIndex = 16;
+			this.botaoNovaConta.Text = "Nova Conta";
+			this.botaoNovaConta.UseVisualStyleBackColor = true;
+			this.botaoNovaConta.Click += new System.EventHandler(this.botaoNovaConta_Click);
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(358, 372);
+			this.Controls.Add(this.botaoNovaConta);
 			this.Controls.Add(this.comboContas);
 			this.Controls.Add(this.label5);
 			this.Controls.Add(this.label6);
@@ -195,6 +207,7 @@
 		private System.Windows.Forms.Label label6;
 		private System.Windows.Forms.Label label5;
 		private System.Windows.Forms.ComboBox comboContas;
+		private System.Windows.Forms.Button botaoNovaConta;
 	}
 }
 

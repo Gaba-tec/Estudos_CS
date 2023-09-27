@@ -30,15 +30,17 @@
 		{
 			this.textoNumero = new System.Windows.Forms.Label();
 			this.textoTitular = new System.Windows.Forms.Label();
-			this.textBox1 = new System.Windows.Forms.TextBox();
-			this.textBox2 = new System.Windows.Forms.TextBox();
+			this.textoN = new System.Windows.Forms.TextBox();
+			this.textoTit = new System.Windows.Forms.TextBox();
 			this.botaoCadastro = new System.Windows.Forms.Button();
+			this.comboTContas = new System.Windows.Forms.ComboBox();
+			this.label1 = new System.Windows.Forms.Label();
 			this.SuspendLayout();
 			// 
 			// textoNumero
 			// 
 			this.textoNumero.AutoSize = true;
-			this.textoNumero.Location = new System.Drawing.Point(32, 21);
+			this.textoNumero.Location = new System.Drawing.Point(22, 89);
 			this.textoNumero.Name = "textoNumero";
 			this.textoNumero.Size = new System.Drawing.Size(44, 13);
 			this.textoNumero.TabIndex = 0;
@@ -47,29 +49,29 @@
 			// textoTitular
 			// 
 			this.textoTitular.AutoSize = true;
-			this.textoTitular.Location = new System.Drawing.Point(32, 66);
+			this.textoTitular.Location = new System.Drawing.Point(22, 139);
 			this.textoTitular.Name = "textoTitular";
 			this.textoTitular.Size = new System.Drawing.Size(36, 13);
 			this.textoTitular.TabIndex = 1;
 			this.textoTitular.Text = "Titular";
 			// 
-			// textBox1
+			// textoN
 			// 
-			this.textBox1.Location = new System.Drawing.Point(101, 18);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(100, 20);
-			this.textBox1.TabIndex = 2;
+			this.textoN.Location = new System.Drawing.Point(101, 82);
+			this.textoN.Name = "textoN";
+			this.textoN.Size = new System.Drawing.Size(120, 20);
+			this.textoN.TabIndex = 2;
 			// 
-			// textBox2
+			// textoTit
 			// 
-			this.textBox2.Location = new System.Drawing.Point(101, 59);
-			this.textBox2.Name = "textBox2";
-			this.textBox2.Size = new System.Drawing.Size(100, 20);
-			this.textBox2.TabIndex = 3;
+			this.textoTit.Location = new System.Drawing.Point(101, 132);
+			this.textoTit.Name = "textoTit";
+			this.textoTit.Size = new System.Drawing.Size(120, 20);
+			this.textoTit.TabIndex = 3;
 			// 
 			// botaoCadastro
 			// 
-			this.botaoCadastro.Location = new System.Drawing.Point(78, 103);
+			this.botaoCadastro.Location = new System.Drawing.Point(87, 190);
 			this.botaoCadastro.Name = "botaoCadastro";
 			this.botaoCadastro.Size = new System.Drawing.Size(75, 23);
 			this.botaoCadastro.TabIndex = 4;
@@ -77,14 +79,33 @@
 			this.botaoCadastro.UseVisualStyleBackColor = true;
 			this.botaoCadastro.Click += new System.EventHandler(this.botaoCadastro_Click);
 			// 
+			// comboTContas
+			// 
+			this.comboTContas.FormattingEnabled = true;
+			this.comboTContas.Location = new System.Drawing.Point(101, 32);
+			this.comboTContas.Name = "comboTContas";
+			this.comboTContas.Size = new System.Drawing.Size(125, 21);
+			this.comboTContas.TabIndex = 5;
+			// 
+			// label1
+			// 
+			this.label1.AutoSize = true;
+			this.label1.Location = new System.Drawing.Point(23, 40);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(35, 13);
+			this.label1.TabIndex = 6;
+			this.label1.Text = "Conta";
+			// 
 			// FormCadastroConta
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(233, 138);
+			this.ClientSize = new System.Drawing.Size(233, 225);
+			this.Controls.Add(this.label1);
+			this.Controls.Add(this.comboTContas);
 			this.Controls.Add(this.botaoCadastro);
-			this.Controls.Add(this.textBox2);
-			this.Controls.Add(this.textBox1);
+			this.Controls.Add(this.textoTit);
+			this.Controls.Add(this.textoN);
 			this.Controls.Add(this.textoTitular);
 			this.Controls.Add(this.textoNumero);
 			this.Name = "FormCadastroConta";
@@ -98,8 +119,10 @@
 
 		private System.Windows.Forms.Label textoNumero;
 		private System.Windows.Forms.Label textoTitular;
-		private System.Windows.Forms.TextBox textBox1;
-		private System.Windows.Forms.TextBox textBox2;
+		private System.Windows.Forms.TextBox textoN;
+		private System.Windows.Forms.TextBox textoTit;
 		private System.Windows.Forms.Button botaoCadastro;
+		private System.Windows.Forms.ComboBox comboTContas;
+		private System.Windows.Forms.Label label1;
 	}
 }
