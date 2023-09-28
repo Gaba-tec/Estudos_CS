@@ -41,4 +41,39 @@ public class ArrayStruct
 
 	}
 
+	public List<int> dynamicArray(int n, List<List<int>> queries)
+	{
+		List<List<int>> list2d = new List<List<int>>();
+
+		List<int> lastAnswers = new List<int>();
+
+		int lastAnswer = 0;
+
+		for(int i = 0; i <= n; i++)
+		{
+			list2d.Add(new List<int>());
+		}
+
+		foreach(List<int> query in queries)
+		{
+			int type = query[0];
+			int x = query[1];
+			int y = query[2];
+			int idx = (x ^ lastAnswer) % n;
+			if(type == 1)
+			{
+				list2d[idx].Add(y);
+			}
+			else
+			{
+				lastAnswer = list2d[idx][y % list2d[idx].Count];
+				lastAnswers.Add(lastAnswer);
+			}
+
+		}
+
+		return lastAnswers;
+
+	}
+
 }

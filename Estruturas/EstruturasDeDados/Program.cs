@@ -62,14 +62,28 @@ myList.Add(new List<int> { 0, 0, 2, 4, 4, 0 });
 myList.Add(new List<int> { 0, 0, 0, 2, 0, 0 });
 myList.Add(new List<int> { 0, 0, 1, 2, 4, 0 });
 
+Console.WriteLine(myList[0]);
+
+
 Console.WriteLine(myList.Count);
 Console.WriteLine(myList[0][0]);
-
-
-
 Console.WriteLine(arr2d.GetLength(0) - 2);
 
-arrS.hourglassSum(arr2d);
+
+
+List<List<int>> queries = new List<List<int>>();
+
+queries.Add(new List<int> { 1, 0, 5 });
+queries.Add(new List<int> { 1, 1, 7 });
+queries.Add(new List<int> { 1, 0, 3 });
+queries.Add(new List<int> { 2, 1, 0 });
+queries.Add(new List<int> { 2, 1, 1 });
+
+int n = 2;
+
+arrS.dynamicArray(n, queries);
+
+//arrS.hourglassSum(arr2d);
 
 List<int> list = new List<int>(arr);
 
