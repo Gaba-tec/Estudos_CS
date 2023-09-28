@@ -110,6 +110,7 @@
 			this.Controls.Add(this.textoNumero);
 			this.Name = "FormCadastroConta";
 			this.Text = " ";
+			this.Load += new System.EventHandler(this.FormCadastroConta_Load);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 

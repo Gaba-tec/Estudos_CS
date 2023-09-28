@@ -22,6 +22,7 @@ namespace Banco
 			this.contas[this.numeroDeContas] = conta;
 			numeroDeContas++;
 			comboContas.Items.Add("Titular: " + conta.Titular.Nome);
+			ContaInvestimento investimento = new ContaInvestimento();
 		}
 
 		public Form1()
@@ -33,7 +34,7 @@ namespace Banco
 		{
 			this.contas = new Conta[10];
 
-			Conta c1 = new Conta();
+			Conta c1 = new ContaCorrente();
 			c1.Titular = new Cliente("victor");
 			c1.Numero = 1;
 			this.AdicionaConta(c1);
@@ -86,6 +87,22 @@ namespace Banco
 		{
 			FormCadastroConta formCadastroConta = new FormCadastroConta(this);
 			formCadastroConta.ShowDialog();
+		}
+
+		private void botaoImpostos_Click(object sender, EventArgs e)
+		{
+			ContaCorrente conta = new ContaCorrente();
+			conta.Deposita(200);
+
+			SeguroDeVida sv = new SeguroDeVida();
+
+			TotalizadorDeTributos totalizador = new TotalizadorDeTributos();
+
+			totalizador.Adiciona(conta);
+
+			MessageBox.Show("Total: " + totalizador.Total);
+			totalizador.Adiciona(sv);
+			MessageBox.Show("Total: " + totalizador.Total);
 		}
 	}
 }

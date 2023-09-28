@@ -2,7 +2,7 @@
 
 namespace Banco
 {
-	public class Conta
+	public abstract class Conta
 	{
 
 		public int Numero { get; set; }
@@ -10,26 +10,22 @@ namespace Banco
 		public double Saldo { get; protected set; }
 		public Cliente Titular { get; internal set; }
 
+		private static int numeroDeContas;
+
 		public Conta()
 		{
-
+			Conta.numeroDeContas++;
+			this.Numero = Conta.numeroDeContas;
 		}
 
-		public virtual void Deposita(double valor)
-		{
-			this.Saldo += valor;
-		}
+		public abstract void Deposita(double valor);
+	
 
-		public virtual void Saque(double valor)
+		public abstract void Saque(double valor);
+
+		public static int ProximaConta()
 		{
-			if(this.Saldo >= valor)
-			{
-				this.Saldo -= valor;
-			}
-			else
-			{
-				System.Windows.Forms.MessageBox.Show("Saldo Insuficiente!");
-			}
+			return numeroDeContas + 1;
 		}
 	}
 }

@@ -4,9 +4,9 @@
 	{
 		public double SaldoTotal {get;private set;}
 
-		public void Adiciona(Conta conta)
+		public void Acumula(Conta c)
 		{
-			this.SaldoTotal += conta.Saldo;
+			this.SaldoTotal += c.Saldo;
 		}
 
 	}

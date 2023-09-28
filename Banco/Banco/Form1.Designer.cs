@@ -42,6 +42,7 @@
 			this.label5 = new System.Windows.Forms.Label();
 			this.comboContas = new System.Windows.Forms.ComboBox();
 			this.botaoNovaConta = new System.Windows.Forms.Button();
+			this.botaoImpostos = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// textoTitular
@@ -74,9 +75,9 @@
 			// 
 			// botaoDeposito
 			// 
-			this.botaoDeposito.Location = new System.Drawing.Point(140, 328);
+			this.botaoDeposito.Location = new System.Drawing.Point(255, 328);
 			this.botaoDeposito.Name = "botaoDeposito";
-			this.botaoDeposito.Size = new System.Drawing.Size(86, 32);
+			this.botaoDeposito.Size = new System.Drawing.Size(76, 32);
 			this.botaoDeposito.TabIndex = 4;
 			this.botaoDeposito.Text = "Depositar";
 			this.botaoDeposito.UseVisualStyleBackColor = true;
@@ -84,9 +85,9 @@
 			// 
 			// botaoSaque
 			// 
-			this.botaoSaque.Location = new System.Drawing.Point(258, 328);
+			this.botaoSaque.Location = new System.Drawing.Point(173, 328);
 			this.botaoSaque.Name = "botaoSaque";
-			this.botaoSaque.Size = new System.Drawing.Size(88, 32);
+			this.botaoSaque.Size = new System.Drawing.Size(76, 32);
 			this.botaoSaque.TabIndex = 5;
 			this.botaoSaque.Text = "Sacar";
 			this.botaoSaque.UseVisualStyleBackColor = true;
@@ -157,19 +158,30 @@
 			// 
 			// botaoNovaConta
 			// 
-			this.botaoNovaConta.Location = new System.Drawing.Point(13, 328);
+			this.botaoNovaConta.Location = new System.Drawing.Point(91, 328);
 			this.botaoNovaConta.Name = "botaoNovaConta";
-			this.botaoNovaConta.Size = new System.Drawing.Size(86, 32);
+			this.botaoNovaConta.Size = new System.Drawing.Size(76, 32);
 			this.botaoNovaConta.TabIndex = 16;
 			this.botaoNovaConta.Text = "Nova Conta";
 			this.botaoNovaConta.UseVisualStyleBackColor = true;
 			this.botaoNovaConta.Click += new System.EventHandler(this.botaoNovaConta_Click);
+			// 
+			// botaoImpostos
+			// 
+			this.botaoImpostos.Location = new System.Drawing.Point(10, 328);
+			this.botaoImpostos.Name = "botaoImpostos";
+			this.botaoImpostos.Size = new System.Drawing.Size(75, 32);
+			this.botaoImpostos.TabIndex = 17;
+			this.botaoImpostos.Text = "Impostos";
+			this.botaoImpostos.UseVisualStyleBackColor = true;
+			this.botaoImpostos.Click += new System.EventHandler(this.botaoImpostos_Click);
 			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(358, 372);
+			this.Controls.Add(this.botaoImpostos);
 			this.Controls.Add(this.botaoNovaConta);
 			this.Controls.Add(this.comboContas);
 			this.Controls.Add(this.label5);
@@ -208,6 +220,7 @@
 		private System.Windows.Forms.Label label5;
 		private System.Windows.Forms.ComboBox comboContas;
 		private System.Windows.Forms.Button botaoNovaConta;
+		private System.Windows.Forms.Button botaoImpostos;
 	}
 }
 
