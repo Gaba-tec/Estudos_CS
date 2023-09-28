@@ -1,0 +1,7 @@
+C:\Users\usr\Documents\Estudos_CS\Estudos_CS\Tech\Fundamentos_Csharp\bin\Debug\Fundamentos_Csharp.exe.config
+C:\Users\usr\Documents\Estudos_CS\Estudos_CS\Tech\Fundamentos_Csharp\bin\Debug\Fundamentos_Csharp.exe
+C:\Users\usr\Documents\Estudos_CS\Estudos_CS\Tech\Fundamentos_Csharp\bin\Debug\Fundamentos_Csharp.pdb
+C:\Users\usr\Documents\Estudos_CS\Estudos_CS\Tech\Fundamentos_Csharp\obj\Debug\Fundamentos_Csharp.csproj.AssemblyReference.cache
+C:\Users\usr\Documents\Estudos_CS\Estudos_CS\Tech\Fundamentos_Csharp\obj\Debug\Fundamentos_Csharp.csproj.CoreCompileInputs.cache
+C:\Users\usr\Documents\Estudos_CS\Estudos_CS\Tech\Fundamentos_Csharp\obj\Debug\Fundamentos_Csharp.exe
+C:\Users\usr\Documents\Estudos_CS\Estudos_CS\Tech\Fundamentos_Csharp\obj\Debug\Fundamentos_Csharp.pdb

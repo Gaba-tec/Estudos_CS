@@ -1,0 +1,4 @@
+C:\Users\usr\Documents\Estudos_CS\Estudos_CS\Tech_Guide\obj\Debug\net7.0\Tech_Guide.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\usr\Documents\Estudos_CS\Estudos_CS\Tech_Guide\obj\Debug\net7.0\Tech_Guide.AssemblyInfoInputs.cache
+C:\Users\usr\Documents\Estudos_CS\Estudos_CS\Tech_Guide\obj\Debug\net7.0\Tech_Guide.AssemblyInfo.cs
+C:\Users\usr\Documents\Estudos_CS\Estudos_CS\Tech_Guide\obj\Debug\net7.0\Tech_Guide.csproj.CoreCompileInputs.cache
