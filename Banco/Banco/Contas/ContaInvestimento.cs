@@ -1,4 +1,4 @@
-﻿namespace Banco
+﻿namespace Banco.Contas
 {
 	public class ContaInvestimento : Conta, ITributavel
 	{

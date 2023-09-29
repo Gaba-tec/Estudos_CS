@@ -1,4 +1,6 @@
-﻿namespace Banco
+﻿using System;
+
+namespace Banco.Contas
 {
 	public class ContaCorrente:Conta,ITributavel
 	{
@@ -12,12 +14,32 @@
 
 		public override void Deposita(double valor)
 		{
-			this.Saldo -= valor - 0.10;
+			if (valor < 0.0)
+			{
+				throw new ArgumentException();
+			}
+			else
+			{
+				this.Saldo -= valor - 0.10;
+			}
 		}
 
 		public override void Saque(double valor)
 		{
-			this.Saldo -= valor + 0.05;
+			if (valor < 0.0)
+			{
+				throw new ArgumentException();
+			}
+
+			if (valor + 0.05 > this.Saldo)
+			{
+				throw new SaldoInsuficienteException();
+			}
+			else
+			{
+				this.Saldo -= valor + 0.05;
+			}
+			
 		}
 
 		public double CalculaTributos()

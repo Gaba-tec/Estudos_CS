@@ -7,13 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Banco.Contas;
 
 namespace Banco
 {
 	public partial class FormCadastroConta : Form
 	{
 		private Form1 formPrincipal;
-		private Conta[] tiposDeContas = {new ContaCorrente(), new ContaPoupanca()};
+		private Banco.Contas.Conta[] tiposDeContas = {new ContaCorrente(), new ContaPoupanca()};
 	
 
 		public FormCadastroConta(Form1 formPrincipal)
@@ -25,7 +26,7 @@ namespace Banco
 
 		private void botaoCadastro_Click(object sender, EventArgs e)
 		{
-			Conta novaConta = tiposDeContas[comboTContas.SelectedIndex];
+			Banco.Contas.Conta novaConta = tiposDeContas[comboTContas.SelectedIndex];
 			novaConta.Titular = new Cliente(textoTit.Text);
 
 			this.formPrincipal.AdicionaConta(novaConta);
@@ -39,7 +40,7 @@ namespace Banco
 
 		private void FormCadastroConta_Load(object sender, EventArgs e)
 		{
-			textoN.Text = Convert.ToString(Conta.ProximaConta());
+			textoN.Text = Convert.ToString(Banco.Contas.Conta.ProximaConta());
 		}
 	}
 }
