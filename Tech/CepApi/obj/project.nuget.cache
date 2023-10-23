@@ -1,8 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "LH/Wp9pyJWm6VL+ThdmiMTld6+qXu2FZu30r+BcSgVca+KRTZ1rpaJr5HBGCvC6wdTQSfhWjkjxs+v2xUjwfqw==",
+  "dgSpecHash": "rLGhgS7zEyEO7cbVfQqQQ87wbnZ7ZtrGw7/m41tGrnse6vTtxXdKbBE9BBSxjT0ol0eo1xOshzWYtCVnIfxGuQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\usr\\Documents\\Estudos_CS\\Estudos_CS\\Tech\\CepApi\\CepApi.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\usr\\.nuget\\packages\\refit\\7.0.0\\refit.7.0.0.nupkg.sha512",
+    "C:\\Users\\usr\\.nuget\\packages\\system.net.http.json\\7.0.1\\system.net.http.json.7.0.1.nupkg.sha512",
+    "C:\\Users\\usr\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\usr\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
+    "C:\\Users\\usr\\.nuget\\packages\\system.text.json\\7.0.3\\system.text.json.7.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
