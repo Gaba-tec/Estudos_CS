@@ -1,0 +1,14 @@
+C:\Users\usr\Documents\Estudos_CS\Estudos_CS\Tech\EstudosAsync\bin\Debug\net6.0\EstudosAsync.exe
+C:\Users\usr\Documents\Estudos_CS\Estudos_CS\Tech\EstudosAsync\bin\Debug\net6.0\EstudosAsync.deps.json
+C:\Users\usr\Documents\Estudos_CS\Estudos_CS\Tech\EstudosAsync\bin\Debug\net6.0\EstudosAsync.runtimeconfig.json
+C:\Users\usr\Documents\Estudos_CS\Estudos_CS\Tech\EstudosAsync\bin\Debug\net6.0\EstudosAsync.dll
+C:\Users\usr\Documents\Estudos_CS\Estudos_CS\Tech\EstudosAsync\bin\Debug\net6.0\EstudosAsync.pdb
+C:\Users\usr\Documents\Estudos_CS\Estudos_CS\Tech\EstudosAsync\obj\Debug\net6.0\EstudosAsync.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\usr\Documents\Estudos_CS\Estudos_CS\Tech\EstudosAsync\obj\Debug\net6.0\EstudosAsync.AssemblyInfoInputs.cache
+C:\Users\usr\Documents\Estudos_CS\Estudos_CS\Tech\EstudosAsync\obj\Debug\net6.0\EstudosAsync.AssemblyInfo.cs
+C:\Users\usr\Documents\Estudos_CS\Estudos_CS\Tech\EstudosAsync\obj\Debug\net6.0\EstudosAsync.csproj.CoreCompileInputs.cache
+C:\Users\usr\Documents\Estudos_CS\Estudos_CS\Tech\EstudosAsync\obj\Debug\net6.0\EstudosAsync.dll
+C:\Users\usr\Documents\Estudos_CS\Estudos_CS\Tech\EstudosAsync\obj\Debug\net6.0\refint\EstudosAsync.dll
+C:\Users\usr\Documents\Estudos_CS\Estudos_CS\Tech\EstudosAsync\obj\Debug\net6.0\EstudosAsync.pdb
+C:\Users\usr\Documents\Estudos_CS\Estudos_CS\Tech\EstudosAsync\obj\Debug\net6.0\EstudosAsync.genruntimeconfig.cache
+C:\Users\usr\Documents\Estudos_CS\Estudos_CS\Tech\EstudosAsync\obj\Debug\net6.0\ref\EstudosAsync.dll
