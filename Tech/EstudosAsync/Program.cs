@@ -4,8 +4,12 @@ using System.Runtime.CompilerServices;
 
 static async Task Main(string[] args)
 {
-	await CompraIngredientes();
-	await TesteAsync();
+	var tasks = new List<Task>();
+	tasks.Add(CompraIngredientes());
+	tasks.Add(TesteAsync());
+	tasks.Add(RetornaTextoAsync());
+
+	await Task.WhenAll(tasks.ToArray());
 }
 
 await Main(args);
@@ -41,6 +45,13 @@ static async Task TesteAsync()
     await Task.Delay(10000);
 	Console.WriteLine("Saindo do método de teste Async");
 
+}
+
+static async Task<string> RetornaTextoAsync()
+{
+	Console.WriteLine("Entrando no método Retorna Texto");
+	string texto = "Que négocio complicado hem";
+	return texto;
 }
 
 
