@@ -1,0 +1,14 @@
+C:\Users\USER\Desktop\Estudos_CS\LendoDocumentoTeste\LendoDocumentoTeste\bin\Debug\net6.0\LendoDocumentoTeste.exe
+C:\Users\USER\Desktop\Estudos_CS\LendoDocumentoTeste\LendoDocumentoTeste\bin\Debug\net6.0\LendoDocumentoTeste.deps.json
+C:\Users\USER\Desktop\Estudos_CS\LendoDocumentoTeste\LendoDocumentoTeste\bin\Debug\net6.0\LendoDocumentoTeste.runtimeconfig.json
+C:\Users\USER\Desktop\Estudos_CS\LendoDocumentoTeste\LendoDocumentoTeste\bin\Debug\net6.0\LendoDocumentoTeste.dll
+C:\Users\USER\Desktop\Estudos_CS\LendoDocumentoTeste\LendoDocumentoTeste\bin\Debug\net6.0\LendoDocumentoTeste.pdb
+C:\Users\USER\Desktop\Estudos_CS\LendoDocumentoTeste\LendoDocumentoTeste\obj\Debug\net6.0\LendoDocumentoTeste.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\Desktop\Estudos_CS\LendoDocumentoTeste\LendoDocumentoTeste\obj\Debug\net6.0\LendoDocumentoTeste.AssemblyInfoInputs.cache
+C:\Users\USER\Desktop\Estudos_CS\LendoDocumentoTeste\LendoDocumentoTeste\obj\Debug\net6.0\LendoDocumentoTeste.AssemblyInfo.cs
+C:\Users\USER\Desktop\Estudos_CS\LendoDocumentoTeste\LendoDocumentoTeste\obj\Debug\net6.0\LendoDocumentoTeste.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\Estudos_CS\LendoDocumentoTeste\LendoDocumentoTeste\obj\Debug\net6.0\LendoDocumentoTeste.dll
+C:\Users\USER\Desktop\Estudos_CS\LendoDocumentoTeste\LendoDocumentoTeste\obj\Debug\net6.0\refint\LendoDocumentoTeste.dll
+C:\Users\USER\Desktop\Estudos_CS\LendoDocumentoTeste\LendoDocumentoTeste\obj\Debug\net6.0\LendoDocumentoTeste.pdb
+C:\Users\USER\Desktop\Estudos_CS\LendoDocumentoTeste\LendoDocumentoTeste\obj\Debug\net6.0\LendoDocumentoTeste.genruntimeconfig.cache
+C:\Users\USER\Desktop\Estudos_CS\LendoDocumentoTeste\LendoDocumentoTeste\obj\Debug\net6.0\ref\LendoDocumentoTeste.dll
