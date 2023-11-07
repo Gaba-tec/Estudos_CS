@@ -30,10 +30,31 @@ namespace ByteBankImportacaoExportacao
 		{
 			var caminhoArquivo = "contasExportadas.csv";
 
-			using(var fluxoDoArquivo = new FileStream(caminhoArquivo, FileMode.CreateNew))
+			using(var fluxoDoArquivo = new FileStream(caminhoArquivo, FileMode.Create))
 			using(var escritor = new StreamWriter(fluxoDoArquivo))
 			{
 				escritor.Write("456,65465,456.0,Pedro");
+			}
+		}
+
+		static void TestaEscrita()
+		{
+			var caminho = "teste.txt";
+			using(var fluxoDoArquivo = new FileStream(caminho,FileMode.Create))
+			using(var escritor = new StreamWriter(fluxoDoArquivo))
+			{
+				for(int i = 0; i < 10; i++)
+				{
+					escritor.WriteLine($"Linha {i}");
+
+					escritor.Flush(); //Despeja o buffer para o Stream
+
+					Console.WriteLine($"Linha {i} foi escrita no arquivo. Tecle enter p adicionar mais uma!");
+
+					Console.ReadLine();
+
+
+				}
 			}
 		}
 	}
