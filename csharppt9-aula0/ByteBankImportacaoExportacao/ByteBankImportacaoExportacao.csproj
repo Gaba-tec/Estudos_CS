@@ -46,6 +46,8 @@
     <Compile Include="1_LidandoComStreamDiretamente.cs" />
     <Compile Include="2_UsandoStreamReader.cs.cs" />
     <Compile Include="3_CriandoArquivo.cs" />
+    <Compile Include="4_StreamBinário.cs" />
+    <Compile Include="5_UsandoStreamDeEntradaDaConsole.cs" />
     <Compile Include="Modelos\Cliente.cs" />
     <Compile Include="Modelos\ContaCorrente.cs" />
     <Compile Include="Program.cs" />
