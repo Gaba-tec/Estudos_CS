@@ -10,7 +10,7 @@ namespace Estacionamento.Testes
 {
 	public class PatioTestes
 	{
-		[Fact]
+		[Fact(DisplayName ="Teste n° 1")]
 		public void ValidaFaturamento()
 		{
 			//Arrange
@@ -33,5 +33,37 @@ namespace Estacionamento.Testes
 
 			Assert.Equal(2, faturamento);
 		}
+
+
+		[Theory(DisplayName = "Teste n° 2")]
+		[InlineData("Andre Silva", "ASD-1498","Preto","Gol")]
+		[InlineData("Jose Silva","POL-9242","Cinza","Fusca")]
+		[InlineData("Maria Silva","GDR-6524","Azul","Opala")]
+		[InlineData("Pedro Silva", "GDR-0101", "Azul", "Corsa")]
+
+		public void ValidaFaturamentoComVariosVeiculos(string proprietario,string placa, string cor, string modelo)
+		{
+			//Arrange
+			Patio patio = new Patio();
+			Veiculo veiculo = new Veiculo();
+			veiculo.Proprietario= proprietario;
+			veiculo.Placa= placa;
+			veiculo.Cor= cor;
+			veiculo.Modelo= modelo;
+			patio.RegistrarEntradaVeiculo(veiculo);
+			patio.RegistrarSaidaVeiculo(veiculo.Placa);			
+			//Act
+			double faturamento = patio.TotalFaturado();
+			//Assert
+			Assert.Equal(2,faturamento);
+		}
+
+		[Fact(DisplayName = "Teste n° 3",Skip = "Teste ainda não implementado.Ignorar")]
+
+		public void ValidaNomeProprietario()
+		{
+
+		}
+
 	}
 }

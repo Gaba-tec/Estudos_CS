@@ -6,6 +6,7 @@ namespace Estacionamento.Testes
 	public class VeiculoTestes
 	{
 		[Fact]
+		[Trait("Funcionalidade","Acelerar")]
 		public void TestaVeiculoAcelerar()
 		{
 			//Arrange
@@ -19,6 +20,7 @@ namespace Estacionamento.Testes
 		}
 
 		[Fact]
+		[Trait("Funcionalidade","Frear")]
 		public void TestaVeiculoFrear()
 		{
 			//Arrange
