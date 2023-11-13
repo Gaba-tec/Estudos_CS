@@ -64,6 +64,17 @@ namespace Estacionamento.Testes
 
 		}
 
+		[Fact]
+		public void TestaUltimosCaracteresPlacaVeiculoComoNumeros()
+		{
+			//Arrange
+			string placaNoFormatoErrado = "ASD-995U";
+
+			//Assert
+			Assert.Throws<System.FormatException>(() => new Veiculo().Placa = placaNoFormatoErrado);
+		}
+
+
 		public void Dispose()
 		{
 			Output.WriteLine("Execução do Cleanup: Limpando os objetos.");
